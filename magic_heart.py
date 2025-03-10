@@ -7,7 +7,7 @@ from telethon.events import NewMessage
 APP_ID = 1252636
 API_HASH = '4037e9f957f6f17d461b0c288ffa50f1'
 
-HEART = '🤍'
+HEART = '🖤'
 COLORED_HEARTS = ['💗', '💓', '💖', '💘', '❤️', '💞']
 MAGIC_PHRASES = ['magic']
 EDIT_DELAY = 0.01
@@ -41,15 +41,18 @@ def generate_parade_colored():
 async def process_love_words(event: NewMessage.Event):
     await client.edit_message(event.peer_id.user_id, event.message.id, 'i')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi na')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi naxui')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever💗')
-
-
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi naxui pi')
+    await asyncio.sleep(1)
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi naxui pido')
+    await asyncio.sleep(1)
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'idi naxui pidoras')
+    
 async def process_build_place(event: NewMessage.Event):
     output = ''
     for i in range(8):
